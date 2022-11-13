@@ -52,6 +52,9 @@ body {
 	font-weight: 600;
 }
 
+.portada .header .mensaje2 {
+	color: red;
+}
 
 
 /* ? ----- MAIN ----- */
