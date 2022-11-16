@@ -1,18 +1,28 @@
-function irArriba(){
-	window.addEventListener('scroll', () => {
-		var scroll = document.documentElement.scrollTop;
-		console.log(scroll);
-		var botonArriba = document.getElementById('botonArriba');
+document.getElementById("button-up").addEventListener("click", scrollUp);
 
-		if (scroll > 500){
-			botonArriba.style.right = 20 + "px";
-		} else {
-			botonArriba.style.right = -100 + "px";
-		}
+function scrollUp(){
 
+    var currentScroll = document.documentElement.scrollTop;
 
-
-	})
+    if (currentScroll > 0){
+        window.requestAnimationFrame(scrollUp);
+        window.scrollTo (0, currentScroll - (currentScroll / 10));
+    }
 }
 
-irArriba();
+
+///
+
+buttonUp = document.getElementById("button-up");
+
+window.onscroll = function(){
+
+    var scroll = document.documentElement.scrollTop;
+
+    if (scroll > 500){
+        buttonUp.style.transform = "scale(1)";
+    }else if(scroll < 500){
+        buttonUp.style.transform = "scale(0)";
+    }
+
+}
