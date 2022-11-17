@@ -14,7 +14,7 @@ function digitalClock(){
     let timeString = f.toLocaleTimeString();
     $tiempo.innerHTML = timeString;
 
-    let semana = ['Lunes','Martes','Miercoles','Jueves','Viernes','Sabado','Domingo'];
+    let semana = ['Dom','Lun','Mar','Mie','Jue','Vie','Sab'];
     let showSemana = (semana[diaSemana]);
     $fecha.innerHTML = `${anio}-${mes}-${dia} ${showSemana}`
 }
