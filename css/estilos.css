@@ -139,6 +139,16 @@ body {
 .about__paragraph {
     line-height: 1.7;
 }
+.about__error {
+    font-size: 1rem;
+    color: red;
+    line-height: 1.7;
+}
+.about__paragrah1{
+    line-height: 1.7;
+    color: black;
+}
+
 
 .about__main {
     padding-top: 80px;
@@ -161,7 +171,7 @@ body {
 }
 
 .about__icon {
-    width: 40px;
+    width: 70px;
 }
 
 /* Knowledge */
@@ -212,7 +222,7 @@ body {
 }
 
 .price__element{
-    background-color: #e5e5f7;
+    background-color: #B2EEEA;
     text-align: center;
     border-radius: 10px;
     width: 330px;
@@ -227,10 +237,10 @@ body {
 .price__element--best{
     width: 370px;
     padding: 60px 40px;
-    background-color: #FF7143;
+    background-color: cornflowerblue;
     --color-plan: rgb(255 255 255 / 75%);
     --color-price: #fff;
-    --bg-cta: #9F3919;
+    --bg-cta: #165B81;  
     --color-cta: #FFF;
     --color-items: #fff;
 }
